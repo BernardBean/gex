@@ -24,7 +24,7 @@
 #define HANGING_SPEED 12.0f
 
 // Prevents Mario from falling asleep while idle
-// #define NO_SLEEP
+#define NO_SLEEP
 
 // Disables fall damage
 #define NO_FALL_DAMAGE
@@ -45,7 +45,7 @@
 // #define HANDS_FREE_HOLDING_FIX
 
 // Prevents Mario losing his cap.
-//#define PREVENT_CAP_LOSS
+#define PREVENT_CAP_LOSS
 
 // Platform displacement 2 also known as momentum patch. Makes Mario keep the momemtum from moving platforms. Doesn't break treadmills anymore!
 #define PLATFORM_DISPLACEMENT_2

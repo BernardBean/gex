@@ -1,0 +1,13 @@
+extern const GeoLayout castle_inside_area_1_geo[];
+extern const GeoLayout castle_inside_area_1[];
+extern const Collision castle_inside_area_1_collision[];
+extern const MacroObject castle_inside_area_1_macro_objs[];
+extern u8 castle_inside_dl_ci4_anonmoose_whiteblock_ci4[];
+extern u8 castle_inside_dl_ci4_anonmoose_whiteblock_ci4_pal_rgba16[];
+extern Vtx castle_inside_dl_Cube_mesh_layer_1_vtx_cull[8];
+extern Vtx castle_inside_dl_Cube_mesh_layer_1_vtx_0[536];
+extern Gfx castle_inside_dl_Cube_mesh_layer_1_tri_0[];
+extern Gfx mat_castle_inside_dl_f3d_material[];
+extern Gfx mat_revert_castle_inside_dl_f3d_material[];
+extern Gfx castle_inside_dl_Cube_mesh_layer_1[];
+extern Gfx castle_inside_dl_material_revert_render_settings[];

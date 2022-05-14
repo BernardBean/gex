@@ -1,5 +1,5 @@
-Gfx castle_grounds_dl_ci4_anonmoose_whiteblock_ci4_aligner[] = {gsSPEndDisplayList()};
-u8 castle_grounds_dl_ci4_anonmoose_whiteblock_ci4[] = {
+Gfx bob_dl_ci4_anonmoose_whiteblock_ci4_aligner[] = {gsSPEndDisplayList()};
+u8 bob_dl_ci4_anonmoose_whiteblock_ci4[] = {
 	0x01, 0x22, 0x22, 0x21, 0x11, 0x11, 0x11, 0x11, 
 	0x11, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 0x22, 
 	0x31, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 0x11, 
@@ -259,8 +259,8 @@ u8 castle_grounds_dl_ci4_anonmoose_whiteblock_ci4[] = {
 	
 };
 
-Gfx castle_grounds_dl_ci4_anonmoose_whiteblock_ci4_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
-u8 castle_grounds_dl_ci4_anonmoose_whiteblock_ci4_pal_rgba16[] = {
+Gfx bob_dl_ci4_anonmoose_whiteblock_ci4_pal_rgba16_aligner[] = {gsSPEndDisplayList()};
+u8 bob_dl_ci4_anonmoose_whiteblock_ci4_pal_rgba16[] = {
 	0x9d, 0x27, 0x94, 0xe5, 0x94, 0xa5, 0x9c, 0xe7, 
 	0xbe, 0x2f, 0xa5, 0x29, 0xb5, 0xed, 0xc6, 0x31, 
 	0xad, 0x69, 0xa5, 0x69, 0xad, 0x6b, 0xc6, 0x71, 
@@ -268,7 +268,7 @@ u8 castle_grounds_dl_ci4_anonmoose_whiteblock_ci4_pal_rgba16[] = {
 	
 };
 
-Vtx castle_grounds_dl_Cube_mesh_layer_1_vtx_cull[8] = {
+Vtx bob_dl_Cube_mesh_layer_1_vtx_cull[8] = {
 	{{{-2746, 100, 2746},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
 	{{{-2746, 100, 2746},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
 	{{{-2746, 100, -2746},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
@@ -279,7 +279,7 @@ Vtx castle_grounds_dl_Cube_mesh_layer_1_vtx_cull[8] = {
 	{{{2746, 100, -2746},0, {-16, -16},{0x0, 0x0, 0x0, 0x0}}},
 };
 
-Vtx castle_grounds_dl_Cube_mesh_layer_1_vtx_0[536] = {
+Vtx bob_dl_Cube_mesh_layer_1_vtx_0[536] = {
 	{{{-343, 100, 1716},0, {-17115, -2617},{0x0, 0x7F, 0x0, 0xFF}}},
 	{{{-686, 100, 1716},0, {-17115, -6241},{0x0, 0x7F, 0x0, 0xFF}}},
 	{{{-686, 100, 2059},0, {-20740, -6241},{0x0, 0x7F, 0x0, 0xFF}}},
@@ -818,8 +818,8 @@ Vtx castle_grounds_dl_Cube_mesh_layer_1_vtx_0[536] = {
 	{{{1030, 100, 343},0, {-2617, 11882},{0x0, 0x7F, 0x0, 0xFF}}},
 };
 
-Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 0, 30, 0),
+Gfx bob_dl_Cube_mesh_layer_1_tri_0[] = {
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 0, 30, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsSP2Triangles(6, 3, 5, 0, 6, 5, 7, 0),
@@ -836,7 +836,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(27, 23, 25, 0, 27, 28, 23, 0),
 	gsSP2Triangles(28, 21, 23, 0, 28, 29, 21, 0),
 	gsSP2Triangles(29, 18, 21, 0, 29, 15, 18, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 30, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 30, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsSP2Triangles(5, 4, 6, 0, 5, 6, 7, 0),
@@ -852,7 +852,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(25, 24, 26, 0, 25, 26, 27, 0),
 	gsSP2Triangles(27, 26, 28, 0, 27, 28, 29, 0),
 	gsSP2Triangles(29, 28, 30, 0, 29, 30, 31, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 62, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 62, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 0, 3, 0, 4, 3, 5, 0),
 	gsSP2Triangles(6, 4, 5, 0, 6, 5, 7, 0),
@@ -868,7 +868,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(26, 24, 25, 0, 26, 25, 27, 0),
 	gsSP2Triangles(28, 26, 27, 0, 28, 27, 29, 0),
 	gsSP2Triangles(30, 28, 29, 0, 30, 29, 31, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 94, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 94, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 1, 0, 0, 4, 5, 1, 0),
 	gsSP2Triangles(6, 5, 4, 0, 6, 7, 5, 0),
@@ -884,7 +884,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(26, 25, 24, 0, 26, 27, 25, 0),
 	gsSP2Triangles(28, 27, 26, 0, 28, 29, 27, 0),
 	gsSP2Triangles(30, 29, 28, 0, 30, 31, 29, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 126, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 126, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(3, 4, 1, 0, 3, 5, 4, 0),
 	gsSP2Triangles(5, 6, 4, 0, 5, 7, 6, 0),
@@ -900,7 +900,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(25, 26, 24, 0, 25, 27, 26, 0),
 	gsSP2Triangles(27, 28, 26, 0, 27, 29, 28, 0),
 	gsSP2Triangles(29, 30, 28, 0, 29, 31, 30, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 158, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 158, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 3, 4, 5, 0),
 	gsSP2Triangles(5, 4, 6, 0, 5, 6, 7, 0),
@@ -916,7 +916,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(25, 24, 26, 0, 25, 26, 27, 0),
 	gsSP2Triangles(27, 26, 28, 0, 27, 28, 29, 0),
 	gsSP2Triangles(30, 27, 29, 0, 30, 29, 31, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 190, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 190, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(4, 0, 3, 0, 4, 3, 5, 0),
 	gsSP2Triangles(6, 4, 5, 0, 6, 5, 7, 0),
@@ -932,7 +932,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(25, 24, 26, 0, 27, 25, 26, 0),
 	gsSP2Triangles(27, 26, 28, 0, 29, 27, 28, 0),
 	gsSP2Triangles(29, 28, 30, 0, 31, 29, 30, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 222, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 222, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 3, 4, 0, 0),
 	gsSP2Triangles(3, 5, 4, 0, 6, 5, 3, 0),
 	gsSP2Triangles(6, 7, 5, 0, 8, 7, 6, 0),
@@ -948,7 +948,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(26, 27, 25, 0, 28, 27, 26, 0),
 	gsSP2Triangles(28, 29, 27, 0, 29, 30, 27, 0),
 	gsSP1Triangle(29, 31, 30, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 254, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 254, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(3, 4, 1, 0, 3, 5, 4, 0),
 	gsSP2Triangles(5, 6, 4, 0, 5, 7, 6, 0),
@@ -964,7 +964,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(24, 26, 25, 0, 26, 27, 25, 0),
 	gsSP2Triangles(26, 28, 27, 0, 28, 29, 27, 0),
 	gsSP2Triangles(28, 30, 29, 0, 27, 29, 31, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 286, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 286, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 2, 1, 3, 0),
 	gsSP2Triangles(2, 3, 4, 0, 4, 3, 5, 0),
 	gsSP2Triangles(4, 5, 6, 0, 6, 5, 7, 0),
@@ -980,7 +980,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(25, 24, 26, 0, 27, 25, 26, 0),
 	gsSP2Triangles(27, 26, 28, 0, 29, 25, 27, 0),
 	gsSP2Triangles(29, 30, 25, 0, 31, 30, 29, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 318, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 318, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 5, 0, 3, 0),
 	gsSP2Triangles(6, 0, 5, 0, 7, 6, 5, 0),
@@ -997,7 +997,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(27, 23, 25, 0, 27, 28, 23, 0),
 	gsSP2Triangles(29, 28, 27, 0, 29, 30, 28, 0),
 	gsSP1Triangle(31, 30, 29, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 350, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 350, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 3, 1, 0, 0),
 	gsSP2Triangles(3, 4, 1, 0, 5, 4, 3, 0),
 	gsSP2Triangles(5, 6, 4, 0, 7, 6, 5, 0),
@@ -1013,7 +1013,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(24, 26, 25, 0, 24, 27, 26, 0),
 	gsSP2Triangles(27, 28, 26, 0, 27, 29, 28, 0),
 	gsSP2Triangles(29, 30, 28, 0, 29, 31, 30, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 382, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 382, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(3, 4, 1, 0, 3, 5, 4, 0),
 	gsSP2Triangles(5, 6, 4, 0, 5, 7, 6, 0),
@@ -1030,7 +1030,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(25, 24, 26, 0, 25, 26, 27, 0),
 	gsSP2Triangles(27, 26, 28, 0, 27, 28, 29, 0),
 	gsSP2Triangles(29, 28, 30, 0, 29, 30, 31, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 414, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 414, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 3, 1, 0, 0),
 	gsSP2Triangles(4, 3, 0, 0, 4, 0, 5, 0),
 	gsSP2Triangles(6, 4, 5, 0, 7, 4, 6, 0),
@@ -1046,7 +1046,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(26, 18, 20, 0, 26, 27, 18, 0),
 	gsSP2Triangles(28, 27, 26, 0, 28, 29, 27, 0),
 	gsSP2Triangles(30, 29, 28, 0, 30, 31, 29, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 446, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 446, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 3, 1, 0),
 	gsSP2Triangles(4, 3, 0, 0, 4, 5, 3, 0),
 	gsSP2Triangles(6, 5, 4, 0, 6, 7, 5, 0),
@@ -1062,7 +1062,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(22, 24, 26, 0, 22, 26, 27, 0),
 	gsSP2Triangles(27, 26, 28, 0, 27, 28, 29, 0),
 	gsSP2Triangles(29, 28, 30, 0, 29, 30, 31, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 478, 32, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 478, 32, 0),
 	gsSP2Triangles(0, 1, 2, 0, 0, 2, 3, 0),
 	gsSP2Triangles(3, 2, 4, 0, 5, 0, 3, 0),
 	gsSP2Triangles(6, 0, 5, 0, 7, 6, 5, 0),
@@ -1079,7 +1079,7 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSP2Triangles(26, 25, 24, 0, 26, 27, 25, 0),
 	gsSP2Triangles(28, 27, 26, 0, 28, 29, 27, 0),
 	gsSP2Triangles(30, 29, 28, 0, 30, 31, 29, 0),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_0 + 510, 26, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_0 + 510, 26, 0),
 	gsSP2Triangles(0, 1, 2, 0, 1, 3, 4, 0),
 	gsSP2Triangles(4, 3, 5, 0, 3, 6, 5, 0),
 	gsSP2Triangles(3, 7, 6, 0, 7, 8, 6, 0),
@@ -1096,19 +1096,19 @@ Gfx castle_grounds_dl_Cube_mesh_layer_1_tri_0[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_castle_grounds_dl_f3d_material[] = {
+Gfx mat_bob_dl_f3d_material[] = {
 	gsDPPipeSync(),
 	gsDPSetCombineLERP(TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT, TEXEL0, 0, SHADE, 0, 0, 0, 0, ENVIRONMENT),
 	gsSPTexture(65535, 65535, 0, 0, 1),
 	gsDPSetTextureLUT(G_TT_RGBA16),
-	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, castle_grounds_dl_ci4_anonmoose_whiteblock_ci4_pal_rgba16),
+	gsDPSetTextureImage(G_IM_FMT_RGBA, G_IM_SIZ_16b, 1, bob_dl_ci4_anonmoose_whiteblock_ci4_pal_rgba16),
 	gsDPTileSync(),
 	gsDPSetTile(0, 0, 0, 256, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0, G_TX_WRAP | G_TX_NOMIRROR, 0, 0),
 	gsDPLoadSync(),
 	gsDPLoadTLUTCmd(7, 15),
 	gsDPPipeSync(),
 	gsDPTileSync(),
-	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, castle_grounds_dl_ci4_anonmoose_whiteblock_ci4),
+	gsDPSetTextureImage(G_IM_FMT_CI, G_IM_SIZ_16b, 1, bob_dl_ci4_anonmoose_whiteblock_ci4),
 	gsDPSetTile(G_IM_FMT_CI, G_IM_SIZ_16b, 0, 0, 7, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0, G_TX_WRAP | G_TX_NOMIRROR, 6, 0),
 	gsDPLoadSync(),
 	gsDPLoadBlock(7, 0, 0, 1023, 512),
@@ -1118,24 +1118,24 @@ Gfx mat_castle_grounds_dl_f3d_material[] = {
 	gsSPEndDisplayList(),
 };
 
-Gfx mat_revert_castle_grounds_dl_f3d_material[] = {
+Gfx mat_revert_bob_dl_f3d_material[] = {
 	gsDPPipeSync(),
 	gsDPSetTextureLUT(G_TT_NONE),
 	gsSPEndDisplayList(),
 };
 
-Gfx castle_grounds_dl_Cube_mesh_layer_1[] = {
+Gfx bob_dl_Cube_mesh_layer_1[] = {
 	gsSPClearGeometryMode(G_LIGHTING),
-	gsSPVertex(castle_grounds_dl_Cube_mesh_layer_1_vtx_cull + 0, 8, 0),
+	gsSPVertex(bob_dl_Cube_mesh_layer_1_vtx_cull + 0, 8, 0),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPCullDisplayList(0, 7),
-	gsSPDisplayList(mat_castle_grounds_dl_f3d_material),
-	gsSPDisplayList(castle_grounds_dl_Cube_mesh_layer_1_tri_0),
-	gsSPDisplayList(mat_revert_castle_grounds_dl_f3d_material),
+	gsSPDisplayList(mat_bob_dl_f3d_material),
+	gsSPDisplayList(bob_dl_Cube_mesh_layer_1_tri_0),
+	gsSPDisplayList(mat_revert_bob_dl_f3d_material),
 	gsSPEndDisplayList(),
 };
 
-Gfx castle_grounds_dl_material_revert_render_settings[] = {
+Gfx bob_dl_material_revert_render_settings[] = {
 	gsDPPipeSync(),
 	gsSPSetGeometryMode(G_LIGHTING),
 	gsSPClearGeometryMode(G_TEXTURE_GEN),
