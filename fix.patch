@@ -1,0 +1,92 @@
+diff --git a/src/game/mario_actions_airborne.c b/src/game/mario_actions_airborne.c
+index 6e9ee447..d627dab5 100644
+--- a/src/game/mario_actions_airborne.c
++++ b/src/game/mario_actions_airborne.c
+@@ -750,6 +750,7 @@ s32 act_riding_shell_air(struct MarioState *m) {
+                     m->particleFlags |= PARTICLE_WATER_SPLASH;
+                     m->pos[1] -= 50;
+                      m->usedObj = spawn_object(m->marioObj, MODEL_KOOPA_SHELL, bhvKoopaShellUnderwater);
++                     m->usedObj->oFlags |= OBJ_FLAG_HOLDABLE;
+                      mario_grab_used_object(m);
+                     m->marioBodyState->grabPos = GRAB_POS_LIGHT_OBJ;
+                     set_mario_action(m, ACT_WATER_SHELL_SWIMMING, (u32)(s32)m->forwardVel);
+@@ -1018,7 +1019,10 @@ s32 act_hold_water_jump(struct MarioState *m) {
+             m->marioObj->header.gfx.angle[2] = 0;
+         }
+         else {
+-            m->heldObj = NULL;
++            if (m->heldObj != NULL) {
++                mark_obj_for_deletion(m->heldObj);
++                m->heldObj = NULL;
++            }
+                 set_camera_mode(m->area->camera, m->area->camera->defMode, 1);
+             return set_mario_action(m, ACT_RIDING_SHELL_JUMP, m->actionTimer);
+         }
+@@ -1030,7 +1034,10 @@ s32 act_hold_water_jump(struct MarioState *m) {
+             // underwater. still, better safe than sorry
+             if (m->actionState == 4 || m->actionState == 6) {
+                 set_mario_action(m, ACT_RIDING_SHELL_GROUND, m->actionState);
+-                m->heldObj = NULL;
++                if (m->heldObj != NULL) {
++                    mark_obj_for_deletion(m->heldObj);
++                    m->heldObj = NULL;
++                }
+ 
+                 set_camera_mode(m->area->camera, m->area->camera->defMode, 1);
+             } else {
+diff --git a/src/game/mario_actions_moving.c b/src/game/mario_actions_moving.c
+index 6ba5a948..5c9c64ec 100644
+--- a/src/game/mario_actions_moving.c
++++ b/src/game/mario_actions_moving.c
+@@ -1293,6 +1293,7 @@ s32 act_riding_shell_ground(struct MarioState *m) {
+             m->riddenObj = NULL;
+         }
+         m->usedObj = spawn_object(m->marioObj, MODEL_KOOPA_SHELL, bhvKoopaShellUnderwater);
++        m->usedObj->oFlags |= OBJ_FLAG_HOLDABLE;
+         mario_grab_used_object(m);
+         m->marioBodyState->grabPos = GRAB_POS_LIGHT_OBJ;
+         m->pos[1] -= 50;
+diff --git a/src/game/mario_actions_submerged.c b/src/game/mario_actions_submerged.c
+index 7a97daa2..91d47cf9 100644
+--- a/src/game/mario_actions_submerged.c
++++ b/src/game/mario_actions_submerged.c
+@@ -769,6 +769,7 @@ static s32 act_water_shell_swimming(struct MarioState *m) {
+ 
+     if (!m->heldObj) {
+         m->usedObj = spawn_object(m->marioObj, MODEL_KOOPA_SHELL, bhvKoopaShellUnderwater);
++        m->usedObj->oFlags |= OBJ_FLAG_HOLDABLE;
+         mario_grab_used_object(m);
+         m->marioBodyState->grabPos = GRAB_POS_LIGHT_OBJ;
+     }
+@@ -1590,7 +1591,10 @@ static s32 check_common_submerged_cancels(struct MarioState *m) {
+             }
+             else {
+                 //exit the water in a generic air shell state
+-                m->heldObj = NULL;
++                if (m->heldObj != NULL) {
++                    mark_obj_for_deletion(m->heldObj);
++                    m->heldObj = NULL;
++                }
+                 set_camera_mode(m->area->camera, m->area->camera->defMode, 1);
+                 return set_mario_action(m, ACT_RIDING_SHELL_JUMP, m->actionTimer);
+             }
+diff --git a/src/game/mario_step.c b/src/game/mario_step.c
+index f0c8bc55..623065e6 100644
+--- a/src/game/mario_step.c
++++ b/src/game/mario_step.c
+@@ -300,6 +300,7 @@ static s32 perform_ground_quarter_step(struct MarioState *m, Vec3f nextPos) {
+             }
+ 
+             m->usedObj = spawn_object(m->marioObj, MODEL_KOOPA_SHELL, bhvKoopaShellUnderwater);
++            m->usedObj->oFlags |= OBJ_FLAG_HOLDABLE;
+             mario_grab_used_object(m);
+             m->marioBodyState->grabPos = GRAB_POS_LIGHT_OBJ;
+             set_mario_action(m, ACT_WATER_SHELL_SWIMMING, (u32)(s32)m->forwardVel);
+@@ -512,6 +513,7 @@ s32 perform_air_quarter_step(struct MarioState *m, Vec3f intendedPos, u32 stepAr
+             }
+ 
+             m->usedObj = spawn_object(m->marioObj, MODEL_KOOPA_SHELL, bhvKoopaShellUnderwater);
++            m->usedObj->oFlags |= OBJ_FLAG_HOLDABLE;
+             mario_grab_used_object(m);
+             m->marioBodyState->grabPos = GRAB_POS_LIGHT_OBJ;
+             set_mario_action(m, ACT_WATER_SHELL_SWIMMING, (u32)(s32)m->forwardVel);
